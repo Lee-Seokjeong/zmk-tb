@@ -16,5 +16,5 @@ manifest:
 
     - name: zmk-tb
       remote: Lee-Seokjeong
-      revision: main
+      revision: master
   
