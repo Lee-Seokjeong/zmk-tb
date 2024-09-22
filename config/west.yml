@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/Lee-Seokjeong
 
   projects:
-    - name: zmk
-      remote: zmkfirmware
+    - name: zmk-tb
+      remote: Lee-Seokjeong
       revision: main
       import: app/west.yml
   self:
