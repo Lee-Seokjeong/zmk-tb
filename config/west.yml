@@ -14,7 +14,7 @@ manifest:
   self:
     path: config
 
-     - name: zmk-tb
+    - name: zmk-tb
       remote: Lee-Seokjeong
       revision: main
   
