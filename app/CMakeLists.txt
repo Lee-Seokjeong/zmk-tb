@@ -129,4 +129,13 @@ if (CONFIG_ZMK_STUDIO_RPC)
   add_subdirectory(src/studio)
 endif()
 
+target_sources(app PRIVATE module/include/zmk/trackball_pim447.h)
+target_sources(app PRIVATE module/include/dt-bindings/zmk/trackball_pim447.h)
+target_sources(app PRIVATE module/drivers/sensor/trackball_pim447/trackball_pim447.c)
+target_sources(app PRIVATE src/mouse/trackball_pim447.c)
+target_sources(app PRIVATE src/behaviors/behavior_trackball_pim447.c)
+
+add_subdirectory(src/display/)
+add_subdirectory(app/module/dts/bindings/sensor/)
+  
 zephyr_cc_option(-Wfatal-errors)
