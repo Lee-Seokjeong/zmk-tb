@@ -18,12 +18,6 @@ if ZMK_DISPLAY
 config I2C
     default y
 
-config ZMK_TRACKBALL_PIM447
-    bool "Enable PIM447 Trackball"
-    default y
-    help
-        Enable support for the PIM447 trackball.
-
 config SSD1306
     default y
 
@@ -45,5 +39,11 @@ choice LV_COLOR_DEPTH
 endchoice
 
 endif # LVGL
+
+config ZMK_TRACKBALL_PIM447
+    bool "Enable PIM447 Trackball"
+    default y
+    help
+        Enable support for the PIM447 trackball.
 
 endif
